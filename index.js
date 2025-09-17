@@ -243,7 +243,7 @@ function finishTest(chatId) {
         resultMessageHtml = `По результатам теста, ваша наиболее подходящая специальность: ${formattedSpecialtyName}.\n\n${specialty.description}`;
 
         if (specialty.url) {
-            resultMessageHtml += `\n\n<a href="${specialty.url}">Подробнее</a>`;
+            resultMessageHtml += `\n\n<a href="${specialty.url}">🔗 Подробнее</a>`;
         }
         
         const photoIdentifier = specialty.photoUrl || defaultPhotoUrl;
